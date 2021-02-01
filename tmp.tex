@@ -9,10 +9,20 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{ragged2e}
+\usepackage{amsfonts}
+\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+\DeclareSymbolFontAlphabet{\mathbbl}{bbold}
 
 \graphicspath{ {.} }
 \setlength{\mathindent}{20pt}
 \hbadness=99999
+
+\newcommand{\problem}[1]{\paragraph*{\large Задача #1\\}}
+\newcommand{\answer}[1]{\\[5pt]\underline{Ответ}: #1}
+\newcommand{\add}[3]{\hbox{Э}_1(#1, #2, #3)}
+\newcommand{\swap}[2]{\hbox{Э}_2(#1, #2)}
+\newcommand{\mult}[2]{\hbox{Э}_3(#1, #2)}
+\newcommand{\proofend}{$\hfill\square$}
 
 \title{\textbf{ДЗ}}
 \author{Фёдор Осетров\\ \textit{группа 203}}
